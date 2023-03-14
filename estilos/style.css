@@ -3,39 +3,84 @@
     margin: 0;
     padding: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
 }
 body{
+    background-color: rgba(65, 105, 225, 0.438);
     width: 100vw;
     height: 100vh;
 }
 main{
-    width:90vw;
-    height: 90vh;
-    border: 1px solid black;
-    margin: auto;
-    display:block;
+    position: relative;    
+    width:100vw;
+    height: 100vh;
 }
-#login{margin-top: 30px;
-    width:100%;
-    height: 50%;
-    border: 1px solid black;
+#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width:250px;
+    height: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 20px  rgb(101, 20, 231);
 }
 #imagen{
-    margin: auto;
     background-image: url(../Imagens/mikhail-nilov.jpg);
     background-size: cover;
     background-position: center center;
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 40%;
+}
+
+#form h1{
+    text-align: center;
+    font-size: 1.5em;
+    padding:5px;
+}
+#form p {
+    font-weight: lighter;
+    font-size: 1em;
+    padding-bottom: 5px;
 }
 #form{
     padding: 10px;
+    height: 60%;
+
 }
-#form h1{
-    text-align: center;
-    font-size: 2.5em
+#login .botoes{
+    display: block;
+    margin: auto;
+    padding: 5px;
+    background-color: rgba(11, 9, 170, 0.692);
+    width: 95%;
+    color: rgb(253, 253, 255);
+    border-radius: 10px;
+    border: none;
+    margin: 7px;
+    box-shadow: 0 0 10px rgba(37, 8, 202, 0.514);
+
 }
-#form p {
-    font-weight: bold;
-    font-size: 1.3em;
+.botoes > .inp{
+    margin-bottom: 3px;
+    width: 80%;
+    padding: 5px;
+}  
+#form #entrar{
+    padding: 13px;
 }
+#form .botoes:hover{
+    display: block;
+    margin: auto;
+    width:100%;
+    transition-duration: 0.8s;
+    
+}
+#form #esqueci{
+   padding: 13px;
+}
+
+
+
